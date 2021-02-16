@@ -1,0 +1,134 @@
+//task one
+Console.Writeline("Hello, world!");
+
+//task two  
+int a = 7;
+int b = 8;
+int S = a * b;
+Console.Writeline(S);
+
+//task three
+/* 
+Python like code without type of variable 
+Again there is try to use dynamic typization
+In that code we can see division by zero, which is omegamistake
+*/
+int x = 5;
+int y = 2;
+Console.Writeline(x/y);
+
+//task four
+   int PLN = 1000;
+   double PLNTOUSD = 0.27;
+   double USD = PLN * PLNTOUSD;
+   Console.WriteLine(USD);
+   
+//task five
+      int PLN = int.Parse(Console.ReadLine());
+      double PLNTOUSD = 0.27;
+      double USD = PLN * PLNTOUSD;
+      Console.WriteLine(USD); 
+
+//six
+            Console.WriteLine("Write a:");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Write b:");
+            int b = int.Parse(Console.ReadLine());
+            Console.WriteLine("Write c:");
+            int c = int.Parse(Console.ReadLine());
+            float D = b * b - 4 * a * c;
+            double x = ((-1 * b) + Math.Sqrt(D))/( 2 * a );
+            double x1 = ((-1 * b) - Math.Sqrt(D))/( 2 * a );
+            Console.WriteLine(x);
+            Console.WriteLine(x1);
+            
+//seven
+// Я просто взял и написал, что именно объяснять??
+
+//eight
+// Cto eto wtf
+
+//eleven
+
+            Console.WriteLine("Enter a non-integer number, please:");
+            double number = double.Parse(Console.ReadLine());
+            double intnumber = number * 100000;
+            Console.Write(intnumber);
+//twelve
+
+            string a = "*****";
+            Console.WriteLine(a);
+            Console.WriteLine(a);
+            Console.WriteLine(a);
+
+//thirteen
+
+            string a = " | | ";
+            string b = "-+-+-";
+            string c = " | | ";
+            string d = "-+-+-";
+            string e = " | | ";
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+            Console.WriteLine(c);
+            Console.WriteLine(d);
+            Console.WriteLine(e);
+            
+//fourteen
+
+            string X = "X";
+            string O = "O";
+            string no = " ";
+            string one = X;
+            string two = no;
+            string three = O;
+            string four = X;
+            string five = O;
+            string six = O;
+            string seven = no;
+            string eight = no;
+            string nine = no;
+            string a = one + "|" + two + "|" + three;
+            string delenie = "-+-+-";
+            string b = four + "|" + five + "|" + six;
+            string delenie2 = "-+-+-";
+            string c = seven + "|" + eight + "|" + nine;
+            Console.WriteLine(a);
+            Console.WriteLine(delenie);
+            Console.WriteLine(b);
+            Console.WriteLine(delenie2);
+            Console.WriteLine(c);
+
+//last
+            Console.WriteLine("WELCOME TO THE FIRST TIC-TAK-TOE GAME EVER!");
+            Console.WriteLine("What's the state of the first field:");
+            string one = Console.ReadLine();
+            Console.WriteLine("What's the state of the second field:");
+            string two = Console.ReadLine();
+            Console.WriteLine("What's the state of the third field:");
+            string three = Console.ReadLine();
+            Console.WriteLine("What's the state of the fourth field:");
+            string four = Console.ReadLine();
+            Console.WriteLine("What's the state of the fifth field:");
+            string five = Console.ReadLine();
+            Console.WriteLine("What's the state of the sixth field:");
+            string six = Console.ReadLine();
+            Console.WriteLine("What's the state of the seventh field:");
+            string seven = Console.ReadLine();
+            Console.WriteLine("What's the state of the eights field:");
+            string eight = Console.ReadLine();
+            Console.WriteLine("What's the state of the ninth field:");
+            string nine = Console.ReadLine();
+            string a = one + "|" + two + "|" + three;
+            string delenie = "-+-+-";
+            string b = four + "|" + five + "|" + six;
+            string delenie2 = "-+-+-";
+            string c = seven + "|" + eight + "|" + nine;
+            Console.WriteLine(a);
+            Console.WriteLine(delenie);
+            Console.WriteLine(b);
+            Console.WriteLine(delenie2);
+            Console.WriteLine(c);
+
+//16.02.21 complited
+
