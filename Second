@@ -1,0 +1,1431 @@
+// 1
+            Console.WriteLine("Please, enter your number: ");
+            int number = int.Parse(Console.ReadLine());
+            if (number % 2 == 0)
+            {
+                Console.WriteLine("Your number is even");
+            }
+            else
+            {
+                Console.WriteLine("Yout number is odd");
+            }
+            
+//2 
+            Console.WriteLine("a: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("b: ");
+            int b = int.Parse(Console.ReadLine());
+            int denominator = a + b;
+            while (denominator == 0)
+            {
+                Console.WriteLine("Division by zero is not allowed!");
+                break;
+            }
+            
+            double equation = a * b / (a + b);
+            Console.WriteLine("Result: " + equation);
+            
+//3
+
+ 
+            Console.WriteLine("Print number one:");
+            int first = int.Parse(Console.ReadLine());
+            Console.WriteLine("Print number two:");
+            int second = int.Parse(Console.ReadLine());
+            Console.WriteLine("Print number three:");
+            int third = int.Parse(Console.ReadLine());
+            
+            if (first > second)
+            {
+                if (first > third)
+                {
+                    Console.WriteLine(first);
+                }
+
+                if (second > third)
+                {
+                    Console.WriteLine(second);
+                    Console.WriteLine(third);
+                }
+                else
+                {
+                    Console.WriteLine(third);
+                    Console.WriteLine(second);
+                }
+            }
+            else if (second > first)
+            {
+                {
+                    if (second > third)
+                    {
+                        Console.WriteLine(second);
+                    }
+
+                    if (first > third)
+                    {
+                        Console.WriteLine(first);
+                        Console.WriteLine(third);
+                    }
+                    else
+                    {
+                        Console.WriteLine(third);
+                        Console.WriteLine(first);
+                    }
+                }
+            }
+
+            else if (third > first)
+            {
+                {
+                    if (third > second)
+                    {
+                        Console.WriteLine(third);
+                    }
+
+                    if (first > second)
+                    {
+                        Console.WriteLine(first);
+                        Console.WriteLine(second);
+                    }
+                    else
+                    {
+                        Console.WriteLine(second);
+                        Console.WriteLine(first);
+                    }
+                }
+            }
+
+//4
+
+            Console.WriteLine("Enter first number, please: ");
+            int first_number = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter second number, please: ");
+            int second_number = int.Parse(Console.ReadLine());
+            Console.WriteLine("Choose operation: +, -, *, /");
+            string operation = (Console.ReadLine());
+            switch (operation)
+            {
+                case "+":
+                    Console.WriteLine(first_number + second_number);
+                    break;
+                case "-":
+                    Console.WriteLine(first_number - second_number);
+                    break;
+                case "*":
+                    Console.WriteLine(first_number * second_number);
+                    break;
+                case "/":
+                    Console.WriteLine(first_number / second_number);
+                    break;
+                default:
+                    Console.WriteLine("Sorry, this is simple calculator and we can't support you");
+                    break;        
+            }
+           
+//5
+            Console.WriteLine("Do you need calculator?");
+            
+            string decisionOne = "No";
+            string decisionTwo = "Yes";
+            Console.ReadLine();
+
+            while (decisionTwo == "Yes");
+            {
+                Console.WriteLine("Enter first number, please: ");
+                int first_number = int.Parse(Console.ReadLine());
+                Console.WriteLine("Enter second number, please: ");
+                int second_number = int.Parse(Console.ReadLine());
+                Console.WriteLine("Choose operation: +, -, *, /");
+                string operation = (Console.ReadLine());
+                switch (operation)
+                {
+                    case "+":
+                        Console.WriteLine(first_number + second_number);
+                        break;
+                    case "-":
+                        Console.WriteLine(first_number - second_number);
+                        break;
+                    case "*":
+                        Console.WriteLine(first_number * second_number);
+                        break;
+                    case "/":
+                        Console.WriteLine(first_number / second_number);
+                        break;
+                    default:
+                        Console.WriteLine("Sorry, this is simple calculator and we can't support you");
+                        break;
+                     
+                }
+
+        
+            
+//6
+             Console.WriteLine("Enter yout number, please: ");
+             int number = int.Parse(Console.ReadLine());
+             Console.WriteLine("Choose what power of number do you need - <1,10>");
+             int choose = int.Parse(Console.ReadLine());
+             switch (choose)
+             {
+                 case (10):
+                     Console.WriteLine(Math.Pow(number, 10));
+                     break;
+                 case (9):
+                     Console.WriteLine(Math.Pow(number, 9));
+                     break;
+                 case (8):
+                     Console.WriteLine(Math.Pow(number, 8));
+                     break;
+                 case (7):
+                     Console.WriteLine(Math.Pow(number, 7));
+                     break;
+                 case (6):
+                     Console.WriteLine(Math.Pow(number, 6));
+                     break;
+                 case (5):
+                     Console.WriteLine(Math.Pow(number, 5));
+                     break;
+                 case (4):
+                     Console.WriteLine(Math.Pow(number, 4));
+                     break;
+                 case (3):
+                     Console.WriteLine(Math.Pow(number, 3));
+                     break;
+                 case (2):
+                     Console.WriteLine(Math.Pow(number, 2));
+                     break;
+                 case (1):
+                     Console.WriteLine(Math.Pow(number, 1));
+                     break;
+             }
+
+//7
+            Console.Writeline("Enter height: ");
+            int height = int.Parse(Console.ReadLine());
+            Console.Writeline("Enter lenght: ");
+            int lenght = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < height; i++)
+            {
+                Console.WriteLine("\n");
+                for (int j = 0; j < lenght; j++)
+                {
+                    Console.Write("*");
+                }
+            }
+//8
+//Треугольник
+            int height = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < height; i++)
+            {
+                for (int j = height; j > i; j--)
+                {
+                    Console.Write(" ");
+                } 
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+                
+                Console.WriteLine();
+            }
+
+
+
+//9
+                Console.WriteLine("Number: ");
+                int number = int.Parse(Console.ReadLine());
+                
+                if (number / number == 0)
+                {
+                    Console.WriteLine("The number is prime");
+                }
+                
+//10
+
+
+ string one = String.Empty;
+            string two = String.Empty;
+            string three = String.Empty;
+            string four = String.Empty;
+            string five = String.Empty;
+            string six = String.Empty;
+            string seven = String.Empty;
+            string eight = String.Empty;
+            string nine = String.Empty;
+            
+            Console.WriteLine("Game begins: ");
+            Console.WriteLine("First turn - X");
+            
+            Console.WriteLine(one + " | " + two + " | " + three);
+            Console.WriteLine("-+--+-");
+            Console.WriteLine(four + " | " + five + " | " + six);
+            Console.WriteLine("-+--+-");
+            Console.WriteLine(seven + " | " + eight + " | " + nine);
+            
+            string firstturn = Console.ReadLine();
+            switch (firstturn)
+            {
+                case ("1"):
+                    one = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("2"):
+                    two = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("3"):
+                    three = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("4"):
+                    four = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("5"):
+                    five = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("6"):
+                    six = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("7"):
+                    seven = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("8"):
+                    eight = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("9"):
+                    nine = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+
+            }
+
+            Console.WriteLine("Second turn - O");
+            string secondturn = Console.ReadLine();
+            switch (secondturn)
+            {
+                case ("1"):
+                    while (one != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    one = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+
+                case ("2"):
+                    while (two != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    two = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("3"):
+                    while (three != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    three = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("4"):
+                    while (four != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    four = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+
+                    break;
+
+                case ("5"):
+                    while (five != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    five = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("6"):
+                    while (six != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    six = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("7"):
+                    while (seven != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    seven = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+
+                    break;
+
+                case ("8"):
+                    while (eight != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    eight = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("9"):
+                    while (nine != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    nine = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+            }
+
+            Console.WriteLine("Third turn - X");
+            string thirdturn = Console.ReadLine();
+            switch (thirdturn)
+            {
+                case ("1"):
+                    while (one != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    one = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+
+                    break;
+
+                case ("2"):
+                    while (two != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    two = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("3"):
+                    while (three != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    three = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("4"):
+                    while (four != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    four = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("5"):
+                    while (five != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    five = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("6"):
+                    while (six != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    six = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("7"):
+                    while (seven != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    seven = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("8"):
+                    while (eight != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    eight = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("9"):
+                    while (nine != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    nine = "X";
+                    Console.WriteLine(one + "|" + two + "|" + three);
+                    Console.WriteLine("-+-+-");
+                    Console.WriteLine(four + "|" + five + "|" + six);
+                    Console.WriteLine("-+-+-");
+                    Console.WriteLine(seven + "|" + eight + "|" + nine);
+                    break;
+            }
+
+            Console.WriteLine("Fourth turn - O");
+            string fourthturn = Console.ReadLine();
+            switch (fourthturn)
+            {
+                case ("1"):
+                    while (one != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    one = "O";
+                    Console.WriteLine(one + "|" + two + "|" + three);
+                    Console.WriteLine("-+-+-");
+                    Console.WriteLine(four + "|" + five + "|" + six);
+                    Console.WriteLine("-+-+-");
+                    Console.WriteLine(seven + "|" + eight + "|" + nine);
+
+                    break;
+
+                case ("2"):
+                    while (two != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    two = "O";
+                    Console.WriteLine(one + "|" + two + "|" + three);
+                    Console.WriteLine("-+-+-");
+                    Console.WriteLine(four + "|" + five + "|" + six);
+                    Console.WriteLine("-+-+-");
+                    Console.WriteLine(seven + "|" + eight + "|" + nine);
+                    break;
+                case ("3"):
+                    while (three != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    three = "O";
+                    Console.WriteLine(one + "|" + two + "|" + three);
+                    Console.WriteLine("-+-+-");
+                    Console.WriteLine(four + "|" + five + "|" + six);
+                    Console.WriteLine("-+-+-");
+                    Console.WriteLine(seven + "|" + eight + "|" + nine);
+                    break;
+                case ("4"):
+                    while (four != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    four = "O";
+                    Console.WriteLine(one + "|" + two + "|" + three);
+                    Console.WriteLine("-+-+-");
+                    Console.WriteLine(four + "|" + five + "|" + six);
+                    Console.WriteLine("-+-+-");
+                    Console.WriteLine(seven + "|" + eight + "|" + nine);
+
+                    break;
+
+                case ("5"):
+                    while (five != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    five = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("6"):
+                    while (six != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    six = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("7"):
+                    while (seven != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    seven = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+
+                    break;
+
+                case ("8"):
+                    while (eight != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    eight = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("9"):
+                    while (nine != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    nine = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+            }
+
+            Console.WriteLine("Fifth turn - X");
+            string fifthturn = Console.ReadLine();
+            switch (fifthturn)
+            {
+                case ("1"):
+                    while (one != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    one = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+
+                    break;
+
+                case ("2"):
+                    while (two != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    two = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("3"):
+                    while (three != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    three = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("4"):
+                    while (four != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    four = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("5"):
+                    while (five != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    five = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("6"):
+                    while (six != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    six = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("7"):
+                    while (seven != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    seven = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("8"):
+                    while (eight != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    eight = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("9"):
+                    while (nine != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    nine = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                
+            }
+            
+            Console.WriteLine("Sixth turn - O ");
+            string sixthturn = Console.ReadLine();
+            switch (sixthturn)
+            {
+                case ("1"):
+                    while (one != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    one = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+
+                    break;
+
+                case ("2"):
+                    while (two != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    two = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("3"):
+                    while (three != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    three = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("4"):
+                    while (four != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    four = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+
+                    break;
+
+                case ("5"):
+                    while (five != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    five = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("6"):
+                    while (six != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    six = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("7"):
+                    while (seven != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    seven = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+
+                    break;
+
+                case ("8"):
+                    while (eight != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    eight = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("9"):
+                    while (nine != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    nine = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+            }
+                      
+            Console.WriteLine("Seventh turn - X");
+            string seventhturn = Console.ReadLine();
+            switch (seventhturn)
+            {
+                case ("1"):
+                    while (one != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    one = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+
+                    break;
+
+                case ("2"):
+                    while (two != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    two = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("3"):
+                    while (three != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    three = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("4"):
+                    while (four != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    four = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("5"):
+                    while (five != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    five = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("6"):
+                    while (six != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    six = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("7"):
+                    while (seven != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    seven = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("8"):
+                    while (eight != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    eight = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("9"):
+                    while (nine != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    nine = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                
+            }
+            
+            Console.WriteLine("Eighth turn - O");
+            string eithturn = Console.ReadLine();
+            switch (eithturn)
+            {
+                case ("1"):
+                    while (one != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    one = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+
+                    break;
+
+                case ("2"):
+                    while (two != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    two = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("3"):
+                    while (three != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    three = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("4"):
+                    while (four != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    four = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+
+                    break;
+
+                case ("5"):
+                    while (five != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    five = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("6"):
+                    while (six != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    six = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("7"):
+                    while (seven != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    seven = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+
+                    break;
+
+                case ("8"):
+                    while (eight != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    eight = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("9"):
+                    while (nine != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    nine = "O";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+            }
+                       Console.WriteLine("Ninth turn - X");
+            string ninthturn = Console.ReadLine();
+            switch (ninthturn)
+            {
+                case ("1"):
+                    while (one != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    one = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+
+                    break;
+
+                case ("2"):
+                    while (two != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    two = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("3"):
+                    while (three != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    three = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("4"):
+                    while (four != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    four = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("5"):
+                    while (five != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    five = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("6"):
+                    while (six != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    six = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("7"):
+                    while (seven != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    seven = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("8"):
+                    while (eight != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    eight = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                case ("9"):
+                    while (nine != String.Empty)
+                    {
+                        Console.WriteLine("WAIT IT'S ILLEGAL!");
+
+                    }
+
+                    nine = "X";
+                    Console.WriteLine(one + " | " + two + " | " + three);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(four + " | " + five + " | " + six);
+                    Console.WriteLine("-+--+-");
+                    Console.WriteLine(seven + " | " + eight + " | " + nine);
+                    break;
+                
+            }
