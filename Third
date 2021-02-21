@@ -1,0 +1,59 @@
+//1
+            Console.WriteLine("Give your first name: ");
+            string fn = Console.ReadLine();
+            Console.WriteLine("Give your last name: ");
+            string ln = Console.ReadLine();
+            Console.WriteLine("Your street: ");
+            string str = Console.ReadLine();
+            Console.WriteLine("Your house number: ");
+            string house = Console.ReadLine();
+            Console.WriteLine("Your flat number: ");
+            string flat = Console.ReadLine();
+            Console.WriteLine("Zip code: ");
+            string zip = Console.ReadLine();
+            Console.WriteLine("Your city: ");
+            string city = Console.ReadLine();
+
+            string first = ($"First name {fn} Last name {ln}");
+            string second = ($"St. {str} {house}/{flat}");
+            string third = ($"Zip-code {zip} City {city}");
+            Console.WriteLine(first);
+            Console.WriteLine(second);
+            Console.WriteLine(third);
+//2
+public static void Main(string[] args)
+        {
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine(@"1. New game 
+2. About the author 
+3. Quit");
+                string action = Console.ReadLine();
+
+                if (action == "1")
+                {
+                    Console.WriteLine("New game");
+                    Console.ReadKey();
+                    continue;
+                }
+
+                if (action == "2")
+                {
+                    Console.WriteLine("He is a rising star!");
+                    Console.ReadKey();
+                    continue;
+                }
+
+                if (action == "3")
+                {
+                    Console.WriteLine("Are you sure? [y/n]");
+                    string sure = Console.ReadLine();
+                    switch (sure)
+                    {
+                        case ("y"):
+                            
+                        case ("n"): 
+                            continue;
+                    }
+                }
